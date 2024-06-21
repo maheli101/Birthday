@@ -1,0 +1,87 @@
+body {
+    background-color: #eee6d2;
+    overflow-x: hidden;
+    font-family: 'Pacifico', cursive;
+}
+
+.side-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#dadImage {
+    left: 15%;
+}
+
+
+
+h1#birthdayText {
+    color: #0f3795; 
+   
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+p#clickText {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.balloon {
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50% 50% 50% 50%;
+    z-index: 1;
+    
+}
+
+.balloon::after {
+    content: '';
+    width: 5px;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50% 50% 0 0;
+}
+
+#balloon1 { left: 10%; background-color: #a7e5cc; animation: floatUp 5s ease-in-out infinite; animation-delay: 2s; }
+#balloon2 { left: 50%; background-color: #f4826e; animation: floatUp 5s ease-in-out infinite; animation-delay: 2s; }
+#balloon3 { left: 80%; background-color: rgb(240, 231, 92); animation: floatUp 5s ease-in-out infinite; animation-delay: 4s; }
+#balloon4 { left: 70%; background-color: #56d4f0; animation: floatUp 6s ease-in-out infinite; animation-delay: 4s; }
+#balloon5 { left: 60%; background-color: #e23cbe; animation: floatUp 5s ease-in-out infinite; animation-delay: 3s; }
+#balloon6 { left: 90%; background-color: #662cd1; animation: floatUp 6s ease-in-out infinite; animation-delay: 2s; }
+#balloon7 { left: 20%; background-color: #ac94d9; animation: floatUp 6s ease-in-out infinite; animation-delay: 2s; }
+#balloon8 { left: 45%; background-color: #7ce8b8; animation: floatUp 6s ease-in-out infinite; animation-delay: 2s; }
+
+@keyframes floatUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-1200px); }
+}
+
+#cakeImage {
+
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#gallery img {
+    border: 2px solid #fff;
+    border-radius: 2px;
+    transition: transform 0.2s;
+    
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+}
+
+#gallery-text {
+    display: none;
+    margin-top: 20px;
+}

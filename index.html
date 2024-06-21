@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dad!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+    <div class="container text-center">
+        <!-- Dad image (initially hidden) -->
+        <img  id="dadImage" class="side-image" src="images/dadhero.png" alt="dad" width="30%">
+    </div>
+
+    
+
+    <div class="container text-center my-5">
+        <h1 id="birthdayText" class="animate__animated animate__fadeInUp" style="display: none;">Happy Birthday, Dad!</h1>
+        <p id="clickText" class="lead animate__animated animate__fadeInUp">Welcome Mr. Priyantha! Please Click on the cake</p>
+    </div>
+
+    <div class="container text-center">
+        <!-- Cake image -->
+        <img id="cakeImage" src="images/cake-0.png" alt="Cake" width="27%">
+    </div>
+    <!-- Balloons (initially hidden) -->
+    <div id="balloons" style="display: none;">
+        <div class="balloon animate__animated animate__fadeInUp" id="balloon1"></div>
+        <div class="balloon animate__animated animate__fadeInUp" id="balloon2"></div>
+        <div class="balloon animate__animated animate__fadeInUp" id="balloon3"></div>
+        <div class="balloon animate__animated animate__fadeInUp" id="balloon4"></div>
+        <div class="balloon animate__animated animate__fadeInUp" id="balloon5"></div>
+        <div class="balloon animate__animated animate__fadeInUp" id="balloon6"></div>
+        <div class="balloon animate__animated animate__fadeInUp" id="balloon7"></div>
+        <div class="balloon animate__animated animate__fadeInUp" id="balloon8"></div>
+    </div>
+
+    <div id="gallerytext" class="container text-center my-5 animate__animated animate__fadeIn"  style="display: none;">
+        <h5>Happy birthday to the most incredible dad. I admire your courage and strength and i aspire to be as amazing as you are one day. I hope the kindness in your heart always remains. I hope this website makes your day!</h5>
+    </div>
+
+
+    <!-- Gallery (initially hidden) -->
+    <div id="gallery" class="container text-center my-5" style="display: none;">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/dad10.jpg" class="img-fluid" alt="Gallery Image 1">
+            </div>
+            <div class="col-4">
+                <img src="images/dad7.jpg" class="img-fluid" alt="Gallery Image 2">
+            </div>
+            <div class="col-4">
+                <img src="images/dadnew.jpeg" class="img-fluid" alt="Gallery Image 3">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-4">
+                <img src="images/dad1.jpeg" class="img-fluid" alt="Gallery Image 4">
+            </div>
+            <div class="col-4">
+                <img src="images/dad5.jpg" class="img-fluid" alt="Gallery Image 5">
+            </div>
+            <div class="col-4">
+                <img src="images/dad11.jpg" class="img-fluid" alt="Gallery Image 6">
+            </div>
+        </div>
+    </div>
+
+   
+    <audio id="birthdaySong" src="audio/happybdaysong.wav"></audio>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
